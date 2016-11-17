@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  </head>
+  <body>
+    <form class="calc">
+      <p class="calc-display">
+        <input type="text" name="res" id="res" value="0" class="calc-display-input" onfocus="this.blur()">
+      </p>
+      <p class="calc-row">
+        <button type="button" class="calc-button calc-button-gray calc-wide">c</button>
+        <button type="button" class="calc-button calc-button-blue calc-button-big">/</button>
+      </p>
+      <p class="calc-row">
+        <button type="button" class="calc-button">7</button>
+        <button type="button" class="calc-button">8</button>
+        <button type="button" class="calc-button">9</button>
+        <button type="button" class="calc-button calc-button-blue calc-button-big">*</button>
+      </p>
+      <p class="calc-row">
+        <button type="button" class="calc-button">4</button>
+        <button type="button" class="calc-button">5</button>
+        <button type="button" class="calc-button">6</button>
+        <button type="button" class="calc-button calc-button-blue calc-button-big">-</button>
+      </p>
+      <p class="calc-row">
+        <button type="button" class="calc-button">1</button>
+        <button type="button" class="calc-button">2</button>
+        <button type="button" class="calc-button">3</button>
+        <button type="button" class="calc-button calc-button-blue calc-button-big">+</button>
+      </p>
+      <p class="calc-row">
+        <button type="button" class="calc-button">0</button>
+        <button type="button" class="calc-button">.</button>
+        <button type="button" class="calc-button">+/-</button>
+        <button type="button" class="calc-button calc-button-green calc-button-big">=</button>
+      </p>
+    </form>
+    <script src="assets/js/calculator.js"></script>
+  </body>
+</html>
