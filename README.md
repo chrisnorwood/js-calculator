@@ -1,6 +1,6 @@
 # Javascript Calculator
 
-This calculator uses HTML, (S)CSS, and Javascript.  This is one of my first javascript projects to explore the new sytax offered by ES6/ES2015, in addition to not using any frameworks (not even jQuery).
+This calculator uses HTML, (S)CSS, and Javascript.  This is one of my first javascript projects to explore the new syntax offered by ES6/ES2015, in addition to not using any frameworks (not even jQuery).
 
 This project helped me learn about CSS box-shadows, SASS mixins, and eventListeners and objects in vanilla JS.
 
