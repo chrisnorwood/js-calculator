@@ -55,7 +55,7 @@ class Calculator {
           this.operation = '';
           this.numbers   = [result.toString()];
         }
-        else if (/^[+\-*/]/.test(input))
+        else if (/^[+\-*/]/.test(input) && input !== "+/-")
         {
           var expression = this.numbers[0]+this.operation+this.numbers[1];
           var result     = eval(expression);
