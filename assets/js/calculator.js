@@ -16,19 +16,15 @@ class Calculator {
     var numbersLength = this.numbers.length;
     var operationLength = this.operation.length;
     
-    if (numbersLength === 0)
+    // No numbers OR just after setting operation
+    if (numbersLength === 0 || (numbersLength === 1 && operationLength !== 0))
     {
       this.numbers.push(input);
     }
-    else if (numbersLength === 1 && operationLength !== 0) 
+    // Otherwise add digit to number 
+    else if (this.numbers[numbersLength-1].length < 12)
     {
-      this.numbers.push(input);
-    } 
-    else
-    {
-      if (this.numbers[numbersLength-1].length < 12) {
-        this.numbers[numbersLength-1] += input;
-      }
+      this.numbers[numbersLength-1] += input;
     }
   }
 
@@ -45,7 +41,7 @@ class Calculator {
       }
     } else {
       // We are adding our operation after the two numbers,
-      // and need to evaluate the expression, then add the 'next' operation 
+      // and need to evaluate the expression, then add the next operation 
       if (this.numbers.length === 2) {
         if (/^[=]$/.test(input))
         {
